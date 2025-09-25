@@ -1,0 +1,44 @@
+[
+  {
+    "chunk_id": "b8d4e904-81f7-402a-add4-0878ee4c1b8b",
+    "source": "ai_cybersecurity.md",
+    "page": 1,
+    "chunk_index": 0,
+    "text": "# AI in Cybersecurity  ## Introduction Artificial Intelligence (AI) is increasingly being applied in cybersecurity to detect threats, automate responses, and predict vulnerabilities. Machine learning models can analyze large amounts of data to identify patterns that indicate attacks or unusual behavior.  ## AI Applications 1. **Threat Detection:** AI systems can detect malware, phishing, and intrusions faster than traditional rule-based systems. 2. **Fraud Prevention:** AI analyzes transactional data to detect anomalies in financial systems and prevent fraud. 3. **Vulnerability Management:** AI models can predict which systems or software components are likely to be exploited, enabling proactive mitigation. 4. **Behavioral Analysis:** AI tracks user behavior to detect insider threats or abnormal access patterns. 5. **Automated Response:** AI-driven systems can automatically quarantine infected files or block suspicious IP addresses.  ## Risks and Challenges - AI models can be fooled by"
+  },
+  {
+    "chunk_id": "ddf600df-218d-4427-beb1-1dece15a252b",
+    "source": "ai_cybersecurity.md",
+    "page": 1,
+    "chunk_index": 1,
+    "text": "normal access patterns. 5. **Automated Response:** AI-driven systems can automatically quarantine infected files or block suspicious IP addresses.  ## Risks and Challenges - AI models can be fooled by adversarial attacks designed to bypass detection.   - Privacy concerns arise when monitoring large amounts of user data.   - Over-reliance on AI may reduce human oversight in critical security decisions.  ## Best Practices - Combine AI with human analysts for more accurate threat assessment.   - Regularly update models with new threat data.   - Test AI systems against adversarial attacks to ensure robustness.  ## Case Studies - **Darktrace:** Uses AI to detect insider threats and unusual network activity.   - **Cylance:** AI-based endpoint protecstreamlit run app_streamlit.py  tion that predicts malware before execution.  ## Conclusion AI enhances cybersecurity by providing advanced threat detection, predictive capabilities, and automated responses. However, human oversight and continuous"
+  },
+  {
+    "chunk_id": "7cf7faad-5899-4aff-8c2f-dc5b7ea2d069",
+    "source": "ai_cybersecurity.md",
+    "page": 1,
+    "chunk_index": 2,
+    "text": "cts malware before execution.  ## Conclusion AI enhances cybersecurity by providing advanced threat detection, predictive capabilities, and automated responses. However, human oversight and continuous model improvement are essential for effective defense."
+  },
+  {
+    "chunk_id": "709e7e65-22d7-471f-ab7c-8ff19474f0ef",
+    "source": "cyber_case_study.md",
+    "page": 1,
+    "chunk_index": 0,
+    "text": "# Case Study: Migration to Post-Quantum Safe TLS (Sample)  Organization X prepared a lab migration to evaluate post-quantum key exchange for TLS. Key takeaways: - A hybrid key-exchange combining ECDHE + a lattice-based KEM was implemented to preserve current compatibility and provide PQ assurance. - Latency increased modestly (benchmarked at ~5-12% overhead depending on chosen PQ algorithm and implementation). - Performance and packet size impacts should be validated for high-throughput gateways.  Recommendations: - Start by inventorying long-lived encrypted data and prioritized services for PQ migration. - Adopt hybrid key exchange in high-risk channels (VPN, inter-datacenter links) as a first step. - Monitor NIST PQC standardization outcomes and vendor support timelines."
+  },
+  {
+    "chunk_id": "b2476504-ab8d-4af5-af40-d8bdfb49ddb8",
+    "source": "quantum_intro.md",
+    "page": 1,
+    "chunk_index": 0,
+    "text": "# Quantum Computing — Primer  ## What is quantum computing? Quantum computing uses quantum bits (qubits) which can exist in superposition and be entangled. This enables certain algorithms (for example, Shor's algorithm and Grover's algorithm) to solve particular problems much faster than classical algorithms.  ## Relevance to cryptography - Shor's algorithm can factor large integers in polynomial time on a sufficiently large quantum computer, threatening RSA-style public-key cryptography. - Grover's algorithm can speed up brute-force search and weaken symmetric key strength roughly by a square-root factor (e.g., AES-256 security becomes similar to AES-128 against Grover's).  ## Mitigation directions - Research and adopt post-quantum cryptography (PQC) schemes (lattice-based, code-based, multivariate, hash-based). - Use hybrid key-exchange (classical + PQC) during transition. - Shorten key lifetimes and use forward secrecy where possible.  (This is a short sample document for demo purpo"
+  },
+  {
+    "chunk_id": "4701b93f-7576-43d2-9d2c-914a3ab04250",
+    "source": "quantum_intro.md",
+    "page": 1,
+    "chunk_index": 1,
+    "text": "ltivariate, hash-based). - Use hybrid key-exchange (classical + PQC) during transition. - Shorten key lifetimes and use forward secrecy where possible.  (This is a short sample document for demo purposes.)"
+  }
+]
