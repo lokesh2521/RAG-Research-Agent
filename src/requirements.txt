@@ -1,0 +1,10 @@
+python-dotenv
+sentence-transformers
+faiss-cpu
+numpy
+tqdm
+pymupdf
+markdown
+openai
+streamlit
+requests
